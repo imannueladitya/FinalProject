@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "kGwxZM/4Sr+yqw1Uq0Ruf+6HgJYNblH1acHaHIszrds7+g1a6zQRBwCpVvIbMCudvve3QTEtfxCwL0I68Q9uvQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\imann\\source\\repos\\TugasAkhir\\tugasakhir\\tugasakhir\\tugasakhir.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\imann\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\imann\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\imann\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\imann\\.nuget\\packages\\xamarin.essentials\\1.7.5\\xamarin.essentials.1.7.5.nupkg.sha512",
+    "C:\\Users\\imann\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

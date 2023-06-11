@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tugasakhir.Views.WaitingPage"
+             BackgroundColor="{StaticResource Secondary}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HasShadow="False" CornerRadius="40" Margin="0,-22,0,0" VerticalOptions="Fill">
+                <StackLayout>
+                    <Frame BackgroundColor="{StaticResource Frame}" Padding="0" CornerRadius="100" Margin="0,10,0,0" >
+                        <Label Text="Waiting Page!"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Text}"
+                           FontSize="30"/>
+                    </Frame>
+                    <StackLayout>
+                        <Label TextColor="{StaticResource Text}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Nama   : " FontAttributes="Bold"/>
+                                    <Span Text="Ignatius Sugeng" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label TextColor="{StaticResource Text}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="No telp : " FontAttributes="Bold"/>
+                                    <Span Text="081297589301" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <ScrollView>
+                <StackLayout>
+                    <Frame HasShadow="False" CornerRadius="40" Margin="0,0,0,0" VerticalOptions="Fill">
+                        <StackLayout>
+                            <Frame BackgroundColor="{StaticResource Frame}" Padding="0" CornerRadius="100" Margin="0,10,0,0" >
+                                <Label Text="Order Data!"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Text}"
+                           FontSize="30"/>
+                            </Frame>
+                            <StackLayout>
+                                <Label TextColor="{StaticResource Text}" FontSize="15">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="ID   : " FontAttributes="Bold"/>
+                                            <Span Text="A17" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*">
+                                    <Label Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="4" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Order List"/>
+                                    <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barang A"/>
+                                    <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barabg B"/>
+                                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barabg C"/>
+                                    <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
+                                    <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
+                                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
+                                    <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="0"/>
+                                    <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="2"/>
+                                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="1"/>
+                                    <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 0"/>
+                                    <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 10000"/>
+                                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 4000"/>
+                                    <Label Grid.Row="4" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="6" FontSize="15" 
+                           HorizontalOptions="StartAndExpand" FontAttributes="Bold" Padding="0,0,0,0" Text="------------------------------------------------"/>
+                                    <Label Grid.Row="5" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Total"/>
+                                    <Label Grid.Row="5" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="14000"/>
+                                </Grid>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HasShadow="False" CornerRadius="40" Margin="0,0,0,0" VerticalOptions="Fill">
+                        <StackLayout>
+                            <Label Text="Order Status" FontSize="20" TextColor="{StaticResource Text}"
+                                FontAttributes="Bold"/>
+                            <Label Text="In Progress" FontSize="15" TextColor="{StaticResource Text}"
+                                FontAttributes="Bold" />
+                            <Label TextColor="{StaticResource Text}" FontSize="15">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Estimate Time --> " FontAttributes="Bold"/>
+                                        <Span Text="20 minutes" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </Frame>
+                    <Button 
+                         Clicked="GoToHome"
+                         Text="Make It" CornerRadius="20" 
+                         Margin="100,10,100,10" BackgroundColor="{StaticResource Primary}"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

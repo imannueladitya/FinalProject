@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tugasakhir.Views.Register">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="{StaticResource Frame}" Padding="0" CornerRadius="100" Margin="50,10,50,0">
+                <Label Text="Register"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Text}"
+                       FontSize="30"/>
+            </Frame>
+            <Frame BackgroundColor="{StaticResource Frame}" Padding="10" CornerRadius="50" Margin="20,10,10,0">
+                <StackLayout>
+                    <Label Text="User ID" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
+                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your ID Here!"
+                           PlaceholderColor="{StaticResource Placeholder}"/>
+                    <Label Text="Full Name" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
+                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your Name Here!"
+                           PlaceholderColor="{StaticResource Placeholder}"/>
+                    <Label Text="Number (Phone)" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
+                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your Number Here!"
+                           PlaceholderColor="{StaticResource Placeholder}"/>
+                    <Label Text="User Password" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
+                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your Password Here!"
+                           PlaceholderColor="{StaticResource Placeholder}"/>
+                </StackLayout>
+            </Frame>
+            <Button 
+                         Clicked="GoToLogin"
+                         Text="Register" CornerRadius="20" TextColor="{StaticResource Text}"
+                         Margin="100,10,100,10" BackgroundColor="{StaticResource Secondary}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

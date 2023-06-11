@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tugasakhir.Views.Profile">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Image Source="igna.jpeg" Aspect="AspectFill" HeightRequest="630"/>
+            <Frame HasShadow="False" CornerRadius="40" Margin="0,-200,0,0" VerticalOptions="FillAndExpand">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*,*">
+                    <Button Grid.Row="0" Grid.Column="2" HeightRequest="56" WidthRequest="56" CornerRadius="30" 
+                            BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
+                            VerticalOptions="Start" HorizontalOptions="End" Margin="0,-50,0,0"/>
+                    <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="40" HorizontalOptions="Center" FontAttributes="Bold" Padding="20,0,0,0" Text="Profile"/>
+                    <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.ColumnSpan="3" FontSize="20" FontAttributes="Bold" Padding="20,0,0,0" Text="Ignatius Sugeng"/>
+                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.ColumnSpan="2" FontSize="15"  Padding="20,0,0,0" Text="081289507291"/>
+                    <Label Grid.Row="4" TextColor="{StaticResource Text}" Grid.ColumnSpan="3" Padding="20,0,0,20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Email: " FontAttributes="Bold"/>
+                                <Span Text="sutibun@bekasiselatan.id" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

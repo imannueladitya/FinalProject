@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tugasakhir.Views.Home"
+             BackgroundColor="{StaticResource Secondary}"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="{StaticResource Frame}" Padding="0" CornerRadius="100" Margin="20,10,10,0" >
+                <Label Text="Home"
+                       HorizontalTextAlignment="Center"
+                       TextColor="{StaticResource Text}"
+                       FontSize="30"/>
+            </Frame>
+            <Frame HasShadow="False" BackgroundColor="{StaticResource Frame}" CornerRadius="40" Margin="10,20,10,0" VerticalOptions="Fill">
+                <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*,*">
+                    <Label Grid.Row="1" TextColor="{StaticResource Text_Home}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" Padding="0,0,0,0" Text="Our Products"/>
+                    <Label Grid.Row="2" TextColor="{StaticResource Text_Home}" Grid.Column="0" FontSize="15" FontAttributes="Bold" Padding="20,0,0,0" Text="Barang 1"/>
+                    <Label Grid.Row="2" TextColor="{StaticResource Text_Home}" Grid.Column="1" FontSize="15" FontAttributes="Bold" Padding="20,0,0,0" Text="Barang 2"/>
+                    <Label Grid.Row="2" TextColor="{StaticResource Text_Home}" Grid.Column="2" FontSize="15" FontAttributes="Bold" Padding="20,0,0,0" Text="Barang 3"/>
+                    <Frame Grid.Row="3" Grid.Column="0" CornerRadius="20" Padding="0" IsClippedToBounds="True">
+                        <Image Source="BarangB" Aspect="AspectFill"/>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="1" CornerRadius="20" Padding="0" IsClippedToBounds="True">
+                        <Image Source="BarangC" Aspect="AspectFill"/>
+                    </Frame>
+                    <Frame Grid.Row="3" Grid.Column="2" CornerRadius="20" Padding="0" IsClippedToBounds="True">
+                        <Image Source="messi" Aspect="AspectFill"/>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+            <Frame BackgroundColor="{StaticResource Frame}" Padding="10" CornerRadius="20" Margin="30,10,30,0" >
+                <StackLayout>
+                    <Label Text="Order will open at 9 am until 8 pm!"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Text}"
+                           FontSize="15"/>
+                    <Label Text="Make sure don't miss out"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Text}"
+                           FontSize="15"/>
+                </StackLayout>
+            </Frame>
+            <Button 
+                Clicked="GoToOrderPage"
+                Text="Go Order" CornerRadius="20" 
+                Margin="100,10,100,10" BackgroundColor="{StaticResource Primary}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
