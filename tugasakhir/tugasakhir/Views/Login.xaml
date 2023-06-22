@@ -17,10 +17,12 @@
             <Frame BackgroundColor="{StaticResource Frame}" Padding="10" CornerRadius="50" Margin="20,10,10,0">
                 <StackLayout>
                     <Label Text="User ID" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
-                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your ID Here!"
+                    <Entry x:Name="email"
+                        TextColor="{StaticResource Text}" Placeholder="Type Your ID Here!"
                            PlaceholderColor="{StaticResource Placeholder}"/>
                     <Label Text="User Password" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
-                    <Entry TextColor="{StaticResource Text}" Placeholder="Type Your Password Here!"
+                    <Entry x:Name="password"
+                        TextColor="{StaticResource Text}" Placeholder="Type Your Password Here!"
                            PlaceholderColor="{StaticResource Placeholder}"/>
                 </StackLayout>
             </Frame>

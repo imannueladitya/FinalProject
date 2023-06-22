@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cpAJKMX/qO6sTWIhXCQlX4/6PBXkuR33XKmYdR0AMOcPopEw/bxWuxZdzoHL6KqrUoy2DMdUsyL/06TnPYu9cQ==",
+  "dgSpecHash": "auEVDNVUNkV/yjgev8Y9vPuPmG9ykDoE/2cGo9dEkK6rxW8N5MFPCNMhsdwW7YAhxgS8hR6BMB0C1lQqxAEj9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\imann\\source\\repos\\TugasAkhir\\tugasakhir\\tugasakhir.Android\\tugasakhir.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\imann\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\imann\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\imann\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\imann\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",

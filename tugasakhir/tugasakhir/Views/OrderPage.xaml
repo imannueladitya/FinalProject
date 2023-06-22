@@ -38,11 +38,14 @@
                            Text="Ini Merupakan deskripsi dari barang yang akan ditampilkan di sini"/>
                     <Button Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
-                            VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
+                            VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"
+                            Clicked="Button_Clicked_Minus_BarangA"/>
                     <Button Grid.Row="3" Grid.Column="5" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
-                            VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
+                            VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"
+                            Clicked="Button_Clicked_Plus_BarangA"/>
+                    <Label x:Name="countLabelBarangA" 
+                           Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
                             VerticalOptions="Center" HorizontalOptions="Center" FontSize="15" Padding="0,0,0,0" 
                            Text="0"/>
                 </Grid>

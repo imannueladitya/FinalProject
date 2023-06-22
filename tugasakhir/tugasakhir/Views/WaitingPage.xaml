@@ -93,13 +93,22 @@
                         <StackLayout>
                             <Label Text="Order Status" FontSize="20" TextColor="{StaticResource Text}"
                                 FontAttributes="Bold"/>
-                            <Label Text="In Progress" FontSize="15" TextColor="{StaticResource Text}"
-                                FontAttributes="Bold" />
+                        <!--    <Label Text="In Progress" FontSize="15" TextColor="{StaticResource Text}"
+                                FontAttributes="Bold" /> 
+                        -->
                             <Label TextColor="{StaticResource Text}" FontSize="15">
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span Text="Estimate Time --> " FontAttributes="Bold"/>
                                         <Span Text="20 minutes" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label TextColor="{StaticResource Text}" FontSize="15">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Notes from Admin --> " FontAttributes="Bold"/>
+                                        <Span Text="Sorry for the late, your order will ready in couple minutes." />
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>

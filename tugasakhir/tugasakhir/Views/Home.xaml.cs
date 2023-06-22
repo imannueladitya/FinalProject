@@ -14,7 +14,8 @@ namespace tugasakhir.Views
     {
         async void GoToOrderPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OrderPage());
+            var Page = new OrderPage();
+            Application.Current.MainPage = Page;
         }
         public Home()
         {
