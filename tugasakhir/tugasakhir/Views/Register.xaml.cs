@@ -18,7 +18,7 @@ namespace tugasakhir.Views
         {
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.68.132:8000/api/register";
+                var url = "http://192.168.51.56:8000/api/register";
 
                 var data = new
                 {
@@ -26,7 +26,7 @@ namespace tugasakhir.Views
                     email = email.Text,
                     password = password.Text
                 };
-                // password tidak di enkripsi -> gkk bisa login lewat web
+                
                 string jsonData = JsonConvert.SerializeObject(data);
                 HttpContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await client.PostAsync(url, content);

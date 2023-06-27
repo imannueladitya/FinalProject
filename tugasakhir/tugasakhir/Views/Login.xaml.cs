@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace tugasakhir.Views
         {
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.68.132:8000/api/login";
+                var url = "http://192.168.51.56:8000/api/login";
 
                 var data = new
                 {
@@ -36,9 +37,26 @@ namespace tugasakhir.Views
 
                 // Send the POST request
                 HttpResponseMessage response = await client.PostAsync(url, content);
-                Console.WriteLine(response);
-                var Page = new Home();
-                Application.Current.MainPage = Page;
+                string content1=await response.Content.ReadAsStringAsync();
+                JObject jresponse = JObject.Parse(content1);
+                if ((bool)jresponse["success"])
+                {
+                    Profile.id = (int)jresponse["data"]["id"];
+                    Profile.nama = (string)jresponse["data"]["name"] ;
+                    Profile.email = (string)jresponse["data"]["email"];
+
+                    WaitingPage.namaw = (string)jresponse["data"]["name"];
+
+                    var Page = new AppShell();
+                    Application.Current.MainPage = Page;
+                }
+
+                else
+                {
+                    await DisplayAlert("Alert", (string)jresponse["message"],"OK");
+                }
+
+                
             }
         }
 

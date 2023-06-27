@@ -22,7 +22,7 @@
                            PlaceholderColor="{StaticResource Placeholder}"/>
                     <Label Text="User Password" TextColor="{StaticResource Text}" FontSize="20" Margin="10,0,0,0"/>
                     <Entry x:Name="password"
-                        TextColor="{StaticResource Text}" Placeholder="Type Your Password Here!"
+                        TextColor="{StaticResource Text}" Placeholder="Type Your Password Here!" IsPassword="true"
                            PlaceholderColor="{StaticResource Placeholder}"/>
                 </StackLayout>
             </Frame>

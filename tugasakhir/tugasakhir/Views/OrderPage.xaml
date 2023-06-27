@@ -27,8 +27,10 @@
                 <StackLayout>
             <Frame CornerRadius="40" Margin="0,10,0,0"  >
                 <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*,*">
-                    <Label Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barang A"/>
+                    <Label 
+                        x:Name="atasnamaA"
+                        Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
                         <Image Source="BarangB" Aspect="AspectFill"/>
@@ -52,8 +54,10 @@
             </Frame>
             <Frame CornerRadius="40" Margin="0,10,0,0"  >
                 <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*,*">
-                    <Label Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barang B"/>
+                    <Label 
+                        x:Name="atasnamaB"
+                        Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
                         <Image Source="BarangC" Aspect="AspectFill"/>
@@ -61,21 +65,29 @@
                     <Label Grid.Row="1" Grid.RowSpan="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" 
                            HorizontalOptions="Start" FontSize="15" Padding="10,0,0,0" 
                            Text="Ini Merupakan deskripsi dari barang yang akan ditampilkan di sini"/>
-                    <Button Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
+                    <Button 
+                        Clicked="Button_Clicked_Minus_BarangB"
+                        Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
                             VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Button Grid.Row="3" Grid.Column="5" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
+                    <Button 
+                        Clicked="Button_Clicked_Plus_BarangB"
+                        Grid.Row="3" Grid.Column="5" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
                             VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
+                    <Label 
+                        x:Name="countLabelBarangB"
+                        Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
                             VerticalOptions="Center" HorizontalOptions="Center" FontSize="15" Padding="0,0,0,0" 
                            Text="0"/>
                 </Grid>
             </Frame>
             <Frame CornerRadius="40" Margin="0,10,0,0"  >
                 <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*,*">
-                    <Label Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barang C"/>
+                    <Label 
+                        x:Name="atasnamaC"
+                        Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" FontSize="25" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
                         <Image Source="igna" Aspect="AspectFill"/>
@@ -83,13 +95,19 @@
                     <Label Grid.Row="1" Grid.RowSpan="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" 
                            HorizontalOptions="Start" FontSize="15" Padding="10,0,0,0" 
                            Text="Ignatius Ginting, tahan banting, anti kendor, preman rawa buntu"/>
-                    <Button Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
+                    <Button 
+                        Clicked="Button_Clicked_Minus_BarangC"
+                        Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
                             VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Button Grid.Row="3" Grid.Column="5" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
+                    <Button 
+                        Clicked="Button_Clicked_Plus_BarangC"
+                        Grid.Row="3" Grid.Column="5" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
                             VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"/>
-                    <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
+                    <Label 
+                        x:Name="countLabelBarangC"
+                        Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" Grid.ColumnSpan="3" 
                             VerticalOptions="Center" HorizontalOptions="Center" FontSize="15" Padding="0,0,0,0" 
                            Text="0"/>
                 </Grid>
@@ -98,36 +116,59 @@
                         <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*">
                             <Label Grid.Row="0" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="4" FontSize="25" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Total Pesanan"/>
-                            <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barang A"/>
-                            <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barabg B"/>
-                            <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Barabg C"/>
+                            <Label 
+                                x:Name="namaA"
+                                Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
+                            <Label 
+                                x:Name="namaB"
+                                Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
+                            <Label 
+                                x:Name="namaC"
+                                Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                             <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
                             <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
                             <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="2" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="x"/>
-                            <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                            
+                            <Label 
+                                x:Name="jumlahA"
+                                Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="0"/>
-                            <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                            <Label 
+                                x:Name="jumlahB"
+                                Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="2"/>
-                            <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
+                            <Label 
+                            x:Name="jumlahC"
+                                Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="3" FontSize="15" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="1"/>
-                            <Label Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 0"/>
-                            <Label Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 10000"/>
-                            <Label Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
-                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="Rp 4000"/>
+                            
+                            
+                            <Label 
+                                x:Name="totalhargaA"
+                                Grid.Row="1" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" />
+                            <Label 
+                                x:Name="totalhargaB"
+                                Grid.Row="2" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" />
+                            <Label 
+                                x:Name="totalhargaC"
+                                Grid.Row="3" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="15" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" />
                             <Label Grid.Row="4" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="6" FontSize="15" 
                            HorizontalOptions="StartAndExpand" FontAttributes="Bold" Padding="0,0,0,0" Text="------------------------------------------------"/>
                             <Label Grid.Row="5" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" 
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text="Total"/>
-                            <Label Grid.Row="5" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" 
-                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" Text="14000"/>
+                            <Label 
+                                x:Name="settotalharga"
+                                Grid.Row="5" TextColor="{StaticResource Text}" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" 
+                           HorizontalOptions="End" FontAttributes="Bold" Padding="10,0,0,0" />
                         </Grid>
                     </Frame>
                     <Button 

@@ -7,8 +7,8 @@ namespace tugasakhir
         public AppShell()
         {
             InitializeComponent();
-            Shell.SetNavBarIsVisible(this, false);
-           // Shell.SetTabBarIsVisible(this, false);  
+            Shell.SetNavBarIsVisible(this, true);
+            //Shell.SetTabBarIsVisible(this, false);  
 
         }
 
