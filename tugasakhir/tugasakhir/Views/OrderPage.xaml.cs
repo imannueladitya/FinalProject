@@ -25,7 +25,7 @@ namespace tugasakhir.Views
 
         int countA=0;
         int countB=0;
-        int countC = 0;
+        int countC=0;
 
 
         int hargaA = 0;
@@ -41,7 +41,7 @@ namespace tugasakhir.Views
 
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.51.56:8000/api/orderproduk";
+                var url = "http://192.168.1.4:8000/api/orderproduk";
 
                 var data = new
                 {
@@ -175,7 +175,7 @@ namespace tugasakhir.Views
                 using (var client = new HttpClient())
 
                 {
-                    var url = "http://192.168.51.56:8000/api/gethargaproduk";
+                    var url = "http://192.168.1.4:8000/api/gethargaproduk";
 
 
 

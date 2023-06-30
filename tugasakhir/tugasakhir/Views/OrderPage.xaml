@@ -17,7 +17,7 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="PickUp Location: " FontAttributes="Bold"/>
-                                <Span Text="Jalan Delatino Bau No 88" />
+                                <Span Text="UNIKA ATMA JAYA BSD" />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -33,11 +33,11 @@
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
-                        <Image Source="BarangB" Aspect="AspectFill"/>
+                        <Image Source="barang1" Aspect="AspectFill"/>
                     </Frame>
                     <Label Grid.Row="1" Grid.RowSpan="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" 
                            HorizontalOptions="Start" FontSize="15" Padding="10,0,0,0" 
-                           Text="Ini Merupakan deskripsi dari barang yang akan ditampilkan di sini"/>
+                           Text="READY"/>
                     <Button Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
                             BackgroundColor="{StaticResource Primary}" ImageSource="icon_about.png" 
                             VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0"
@@ -60,11 +60,11 @@
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
-                        <Image Source="BarangC" Aspect="AspectFill"/>
+                        <Image Source="barang2" Aspect="AspectFill"/>
                     </Frame>
                     <Label Grid.Row="1" Grid.RowSpan="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" 
                            HorizontalOptions="Start" FontSize="15" Padding="10,0,0,0" 
-                           Text="Ini Merupakan deskripsi dari barang yang akan ditampilkan di sini"/>
+                           Text="READY"/>
                     <Button 
                         Clicked="Button_Clicked_Minus_BarangB"
                         Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
@@ -90,11 +90,11 @@
                            HorizontalOptions="Start" FontAttributes="Bold" Padding="10,0,0,0" Text=""/>
                     <Frame Grid.Row="0" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" 
                            CornerRadius="20" Padding="0" IsClippedToBounds="True" HeightRequest="50">
-                        <Image Source="igna" Aspect="AspectFill"/>
+                        <Image Source="barang3" Aspect="AspectFill"/>
                     </Frame>
                     <Label Grid.Row="1" Grid.RowSpan="3" TextColor="{StaticResource Text}" Grid.Column="0" Grid.ColumnSpan="3" 
                            HorizontalOptions="Start" FontSize="15" Padding="10,0,0,0" 
-                           Text="Ignatius Ginting, tahan banting, anti kendor, preman rawa buntu"/>
+                           Text="READY"/>
                     <Button 
                         Clicked="Button_Clicked_Minus_BarangC"
                         Grid.Row="3" Grid.Column="3" HeightRequest="25" WidthRequest="25" CornerRadius="30" 
@@ -173,7 +173,7 @@
                     </Frame>
                     <Button 
                          Clicked="GoToWaitingPage"
-                         Text="Make It" CornerRadius="20" 
+                         Text="Order" CornerRadius="20" 
                          Margin="100,10,100,10" BackgroundColor="{StaticResource Primary}"/>
                 </StackLayout>
             </ScrollView>

@@ -21,7 +21,7 @@ namespace tugasakhir.Views
         {
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.51.56:8000/api/login";
+                var url = "http://192.168.1.4:8000/api/login";
 
                 var data = new
                 {
@@ -38,7 +38,7 @@ namespace tugasakhir.Views
                 // Send the POST request
                 HttpResponseMessage response = await client.PostAsync(url, content);
                 string content1=await response.Content.ReadAsStringAsync();
-                JObject jresponse = JObject.Parse(content1);
+               JObject jresponse = JObject.Parse(content1);
                 if ((bool)jresponse["success"])
                 {
                     Profile.id = (int)jresponse["data"]["id"];

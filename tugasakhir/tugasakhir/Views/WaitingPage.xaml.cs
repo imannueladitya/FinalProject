@@ -16,7 +16,8 @@ namespace tugasakhir.Views
         public static string namaw;
         async void GoToHome(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Home());
+            var Page = new AppShell();
+            Application.Current.MainPage = Page;
         }
         public WaitingPage (string namaA,string namaB,string namaC,int countA, int countB, int countC, int totalA, int totalB, int totalC,int total, int transactionID)
 		{

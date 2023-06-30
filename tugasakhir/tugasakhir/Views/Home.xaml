@@ -25,13 +25,13 @@
                         x:Name="namaChome"
                         Grid.Row="2" TextColor="{StaticResource Text_Home}" Grid.Column="2" FontSize="15" FontAttributes="Bold" Padding="20,0,0,0" />
                     <Frame Grid.Row="3" Grid.Column="0" CornerRadius="20" Padding="0" IsClippedToBounds="True">
-                        <Image Source="BarangB" Aspect="AspectFill"/>
+                        <Image Source="barang1" Aspect="AspectFill"/>
                     </Frame>
                     <Frame Grid.Row="3" Grid.Column="1" CornerRadius="20" Padding="0" IsClippedToBounds="True">
-                        <Image Source="BarangC" Aspect="AspectFill"/>
+                        <Image Source="barang2" Aspect="AspectFill"/>
                     </Frame>
                     <Frame Grid.Row="3" Grid.Column="2" CornerRadius="20" Padding="0" IsClippedToBounds="True">
-                        <Image Source="messi" Aspect="AspectFill"/>
+                        <Image Source="barang3" Aspect="AspectFill"/>
                     </Frame>
                 </Grid>
             </Frame>

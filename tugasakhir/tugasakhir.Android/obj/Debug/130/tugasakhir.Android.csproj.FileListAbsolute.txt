@@ -647,3 +647,7 @@ C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\1
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\lp\98\jl\files.cache
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\android\assets\Newtonsoft.Json.dll
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\profilekartun.png
+C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\barang2.jpg
+C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\barang3.jpg
+C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\barang1.jpg
+C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\logo.png
