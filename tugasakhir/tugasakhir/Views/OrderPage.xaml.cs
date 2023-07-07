@@ -78,14 +78,12 @@ namespace tugasakhir.Views
 
         private void Button_Clicked_Plus_BarangA(object sender, EventArgs e)
         {
-        
-            countA++;
-            if (countA > 3)
+            if (countA + countB + countC < 3)
             {
-                countA = 3;
+                countA++;
+                countLabelBarangA.Text = countA.ToString();
+                totalharga();
             }
-            countLabelBarangA.Text = countA.ToString();
-            totalharga();
         }
 
         private void Button_Clicked_Minus_BarangA(object sender, EventArgs e)
@@ -102,14 +100,12 @@ namespace tugasakhir.Views
 
         private void Button_Clicked_Plus_BarangB(object sender, EventArgs e)
         {
-
-            countB++;
-            if (countB > 3)
+            if (countA + countB + countC < 3)
             {
-                countB = 3;
+                countB++;
+                countLabelBarangB.Text = countB.ToString();
+                totalharga();
             }
-            countLabelBarangB.Text = countB.ToString();
-            totalharga();
         }
 
         private void Button_Clicked_Minus_BarangB(object sender, EventArgs e)
@@ -126,14 +122,12 @@ namespace tugasakhir.Views
 
         private void Button_Clicked_Plus_BarangC(object sender, EventArgs e)
         {
-
-            countC++;
-            if (countC > 3)
+            if (countA + countB + countC < 3)
             {
-                countC = 3;
+                countC++;
+                countLabelBarangC.Text = countC.ToString();
+                totalharga();
             }
-            countLabelBarangC.Text = countC.ToString();
-            totalharga();
         }
 
         private void Button_Clicked_Minus_BarangC(object sender, EventArgs e)
@@ -168,28 +162,24 @@ namespace tugasakhir.Views
 
 
         }
-        public OrderPage ()
-		{
-			InitializeComponent ();
-            Task.Run(async () => {
+        public OrderPage()
+        {
+            InitializeComponent();
+            Task.Run(async () =>
+            {
                 using (var client = new HttpClient())
-
                 {
                     var url = "http://192.168.1.4:8000/api/gethargaproduk";
 
-
-
-                    // Send the POST request
+                    // Send the GET request
                     HttpResponseMessage response = await client.GetAsync(url);
                     string content1 = await response.Content.ReadAsStringAsync();
-                    
-                    
+
                     JObject jresponse = JObject.Parse(content1);
 
                     hargaA = (int)jresponse["data"][0]["product_price"];
                     hargaB = (int)jresponse["data"][1]["product_price"];
                     hargaC = (int)jresponse["data"][2]["product_price"];
-
 
                     namaA.Text = (string)jresponse["data"][0]["product_name"];
                     namaB.Text = (string)jresponse["data"][1]["product_name"];
@@ -199,16 +189,12 @@ namespace tugasakhir.Views
                     atasnamaB.Text = (string)jresponse["data"][1]["product_name"];
                     atasnamaC.Text = (string)jresponse["data"][2]["product_name"];
 
-
                     produkIDA = (int)jresponse["data"][0]["id"];
                     produkIDB = (int)jresponse["data"][1]["id"];
                     produkIDC = (int)jresponse["data"][2]["id"];
-
-
                 }
-
-            });
-            
+            }).GetAwaiter().GetResult();
         }
-	}
+
+    }
 }
