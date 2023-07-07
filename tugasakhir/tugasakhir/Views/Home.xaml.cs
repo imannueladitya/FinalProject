@@ -21,6 +21,32 @@ namespace tugasakhir.Views
             var Page = new OrderPage();
             Application.Current.MainPage = Page;
         }
+
+        public Home()
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, true);
+            Task.Run(async () => {
+                using (var client = new HttpClient())
+                {
+                    var url = "http://192.168.1.4:8000/api/gethargaproduk";
+                    // Send the POST request
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    string content1 = await response.Content.ReadAsStringAsync();
+                    JObject jresponse = JObject.Parse(content1);
+
+                    Device.BeginInvokeOnMainThread(() => { // Update UI on the main thread
+                        namaAhome.Text = (string)jresponse["data"][0]["product_name"];
+                        namaBhome.Text = (string)jresponse["data"][1]["product_name"];
+                        namaChome.Text = (string)jresponse["data"][2]["product_name"];
+                    });
+                }
+            }).Wait(); // Wait for the Task to complete synchronously
+        }
+
+
+
+        /*
         public Home()
         {
             InitializeComponent();
@@ -38,7 +64,9 @@ namespace tugasakhir.Views
                     namaBhome.Text = (string)jresponse["data"][1]["product_name"];
                     namaChome.Text = (string)jresponse["data"][2]["product_name"];
                 }
+
             });
         }
+        */
     }
 }

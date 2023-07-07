@@ -624,11 +624,7 @@ C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\1
 C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\barangc.png
-C:\Users\imann\source\repos\tugasakhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\barangb.png
-C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\igna.jpeg
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\profile.png
-C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\res\drawable\messi.jpg
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\lp\53\jl\files.cache
 C:\Users\imann\source\repos\TugasAkhir\tugasakhir\tugasakhir.Android\obj\Debug\130\lp\54\jl\files.cache
