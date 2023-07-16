@@ -41,7 +41,7 @@ namespace tugasakhir.Views
 
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.1.4:8000/api/orderproduk";
+                var url = "http://192.168.1.9:8000/api/orderproduk";
 
                 var data = new
                 {
@@ -169,7 +169,7 @@ namespace tugasakhir.Views
             {
                 using (var client = new HttpClient())
                 {
-                    var url = "http://192.168.1.4:8000/api/gethargaproduk";
+                    var url = "http://192.168.1.9:8000/api/gethargaproduk";
 
                     // Send the GET request
                     HttpResponseMessage response = await client.GetAsync(url);

@@ -29,7 +29,7 @@ namespace tugasakhir.Views
             Task.Run(async () => {
                 using (var client = new HttpClient())
                 {
-                    var url = "http://192.168.1.4:8000/api/gethargaproduk";
+                    var url = "http://192.168.1.9:8000/api/gethargaproduk";
                     // Send the POST request
                     HttpResponseMessage response = await client.GetAsync(url);
                     string content1 = await response.Content.ReadAsStringAsync();
@@ -54,7 +54,7 @@ namespace tugasakhir.Views
             Task.Run(async () => {
                 using (var client = new HttpClient())
                 {
-                    var url = "http://192.168.1.4:8000/api/gethargaproduk";
+                    var url = "http://192.168.1.9:8000/api/gethargaproduk";
                     // Send the POST request
                     HttpResponseMessage response = await client.GetAsync(url);
                     string content1 = await response.Content.ReadAsStringAsync();

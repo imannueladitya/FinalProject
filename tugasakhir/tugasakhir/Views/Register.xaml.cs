@@ -18,7 +18,7 @@ namespace tugasakhir.Views
         {
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.1.4:8000/api/register"; //ip dari komputer lokal 
+                var url = "http://192.168.1.9:8000/api/register"; //ip dari komputer lokal 
 
                 var data = new
                 {

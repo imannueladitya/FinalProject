@@ -21,7 +21,7 @@ namespace tugasakhir.Views
         {
             using (var client = new HttpClient())
             {
-                var url = "http://192.168.1.4:8000/api/login";
+                var url = "http://192.168.1.9:8000/api/login";
 
                 var data = new
                 {
